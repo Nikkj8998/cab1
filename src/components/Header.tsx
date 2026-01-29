@@ -419,6 +419,14 @@ const Header = () => {
           {/* Mobile and Tablet Contact Button and Hamburger Menu */}
           <div className="lg:hidden flex items-center gap-2">
             <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className="text-xs md:text-sm font-medium border-[#14539a] text-[#14539a] hover:bg-[#14539a] hover:text-white px-3 py-2"
+            >
+              <Link to="/offers">Get Offer</Link>
+            </Button>
+            <Button
               variant="default"
               size="sm"
               asChild
