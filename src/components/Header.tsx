@@ -422,9 +422,12 @@ const Header = () => {
               variant="outline"
               size="sm"
               asChild
-              className="text-xs md:text-sm font-medium border-[#14539a] text-[#14539a] hover:bg-[#14539a] hover:text-white px-3 py-2"
+              className="border border-green-700 text-green-700 bg-green-100 hover:bg-green-700 hover:text-white font-semibold px-3 py-1.5 rounded-full transition-all duration-200 flex items-center gap-2 text-xs md:text-sm"
             >
-              <Link to="/offers">Get Offer</Link>
+              <Link to="/offers" onClick={handleMenuItemClick} className="flex items-center gap-2">
+                <BadgePercent className="w-4 h-4" />
+                Get Offer
+              </Link>
             </Button>
             <Button
               variant="default"
@@ -517,7 +520,7 @@ const Header = () => {
                                   const serviceName =
                                     typeof service === "string"
                                       ? service
-                                      : service.name;
+                                      : (service as any).name;
                                   const serviceHash =
                                     typeof service === "string"
                                       ? service
@@ -549,7 +552,7 @@ const Header = () => {
                                   const serviceName =
                                     typeof service === "string"
                                       ? service
-                                      : service.name;
+                                      : (service as any).name;
                                   const serviceHash =
                                     typeof service === "string"
                                       ? service
@@ -581,7 +584,7 @@ const Header = () => {
                                   const serviceName =
                                     typeof service === "string"
                                       ? service
-                                      : service.name;
+                                      : (service as any).name;
                                   const serviceHash =
                                     typeof service === "string"
                                       ? service
@@ -616,7 +619,7 @@ const Header = () => {
                                   const serviceName =
                                     typeof service === "string"
                                       ? service
-                                      : service.name;
+                                      : (service as any).name;
                                   const serviceHash =
                                     typeof service === "string"
                                       ? service
@@ -648,7 +651,7 @@ const Header = () => {
                                   const serviceName =
                                     typeof service === "string"
                                       ? service
-                                      : service.name;
+                                      : (service as any).name;
                                   const serviceHash =
                                     typeof service === "string"
                                       ? service
